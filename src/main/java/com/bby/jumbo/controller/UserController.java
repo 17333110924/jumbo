@@ -13,6 +13,7 @@ public class UserController {
 
     @GetMapping("/user/getinfo/{msg}")
     public String getInfo(@PathVariable("msg") String msg){
+        System.out.println("msg:"+msg);
       return msg;
     }
 }
